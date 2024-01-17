@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //* Latihan algoritma 1/15/2024
+      //* 1. Menghitung gaji karyawan
+      let nama = "John";
+      let gajiPokok = 7000000;
+      let tunj = gajiPokok * 0.2;
+      let pjk = 0.15 * tunj;
+      let gajiBersih = gajiPokok + tunj - pjk;
+
+      document.write(
+        `Soal no.1<br>nama = ${nama} <br> gajiPokok = Rp ${gajiPokok} <br> tunjangan = Rp ${tunj} <br> pajak = Rp ${pjk} <br> gajiBersih = Rp ${gajiBersih}`
+      );
+
+      //* 2. Mengkonversi jam-menit-detik ke total
+      let j = prompt("Masukkan nilai jam untuk dikonversi!");
+      let m = prompt("Masukkan nilai menit untuk dikonversi!");
+      let d = prompt("Masukkan nilai detik!");
+
+      let jdk = j * 3600;
+      let mdk = m * 60;
+      let ddk = d;
+
+      document.write(
+        `<br><br>Soal no.2 <br>${j} jam = ${jdk} detik <br> ${m} menit = ${mdk} detik <br> ${d} detik = ${ddk} detik`
+      );
+      //* 3. Mengkonversi total detik ke jam-menit-detik
+
+      let inptDtk = prompt(
+        "Masukkan total nilai detik, niscaya akan di konversi"
+      );
+
+      function konversiTotalDetikKeJamMenitDetik() {
+        let jam = Math.floor(inptDtk / 3600);
+        let sisa = inptDtk % 3600;
+        let menit = Math.floor(sisa / 60);
+        let detik = sisa % 60;
+
+        let hasil = jam + "jam" + menit + "menit" + detik + "detik";
+
+        return hasil;
+      }
+
+      let hasilKonverensi = konversiTotalDetikKeJamMenitDetik();
+      document.write(hasilKonverensi);
+    </script>
+  </body>
+</html>

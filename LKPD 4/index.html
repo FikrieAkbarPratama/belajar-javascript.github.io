@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LKPD 4</title>
+  </head>
+  <body>
+    <script>
+      // Soal no 1
+      let nama = "Iqpal";
+      let pabp = 70;
+      let mtk = 82;
+      let dpk = 77;
+      let rata2 = (pabp + mtk + dpk) / 3;
+
+      if (rata2 >= 80 && rata2 <= 100) {
+        grade = "A";
+      } else if (rata2 >= 75 && rata2 < 80) {
+        grade = "B";
+      } else if (rata2 >= 65 && rata2 > 75) {
+        grade = "C";
+      } else if (rata2 >= 45 && rata2 > 65) {
+        grade = "D";
+      } else if (rata2 >= 0 && rata2 > 45) {
+        grade = "E";
+      } else {
+        grade = "E";
+      }
+
+      let hasil = `${nama} mendapatkan grade ${grade}`;
+
+      document.write(hasil);
+    </script>
+  </body>
 </html>
