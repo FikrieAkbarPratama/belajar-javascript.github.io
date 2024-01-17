@@ -320,6 +320,8 @@ let ddk = d;
 document.write(`<br><br>Soal no.2 <br>${j} jam = ${jdk} detik <br> ${m} menit = ${mdk} detik <br> ${d} detik = ${ddk} detik`)
 //* 3. Mengkonversi total detik ke jam-menit-detik
 
+let inptDtk = prompt('Masukkan total nilai detik, niscaya akan di konversi');
+
 function konversiTotalDetikKeJamMenitDetik() {
   let  jam = Math.floor(inptDtk / 3600);
   let sisa = inptDtk % 3600;
@@ -330,8 +332,6 @@ function konversiTotalDetikKeJamMenitDetik() {
 
   return hasil;
 }
-let inptDtk = prompt('Masukkan total nilai detik, niscaya akan di konversi');
-
 
 let hasilKonverensi = konversiTotalDetikKeJamMenitDetik();
 document.write(hasilKonverensi)

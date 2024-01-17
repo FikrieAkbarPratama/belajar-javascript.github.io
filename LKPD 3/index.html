@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Soal no 1
+        // let pesanan = prompt("Mau beli berapa kg/gram jeruk?");
+        // let harga = pesanan / 100 * 500;
+        // let diskon = harga * 0.05;
+        // let perKg = pesanan / 1000;
+        // let hargaSet = harga - diskon;
+
+        // let hasil = `Harga pesanan sebelum diskon = ${harga} <br> Harga diskon = ${diskon} <br> Total harga setelah diskon = ${hargaSet}`
+        
+        // document.write(hasil);
+
+        // Soal no 2
+        // let bilangan = prompt('Masukkan bilangan bulat!')
+        // let satuan = bilangan % 10;
+        // let puluhan = Math.floor((bilangan % 100) / 10);
+        // let ratusan = Math.floor ((bilangan / 100) % 10);
+        // let ribuan = Math.floor((bilangan / 1000) % 100)
+
+        // let hasil = `<br> ${satuan} satuan ${puluhan} puluhan ${ratusan} ratusan ${ribuan} ribuan`
+        // document.write(hasil);
+
+        // Soal no 3
+        let fahrenheit = prompt("Masukkan temperatur suhu dalam bentuk Fahrenheit");
+        let celcius = (fahrenheit - 32) * 5/9 
+        if (celcius > 300) {
+            keterangan = "Panas";
+        } else if (celcius < 250) {
+            keterangan = "Dingin";
+        } else {
+            keterangan = "Normal";
+        }
+
+        let hasil = `<br> Cuaca saat ini sedang "${keterangan}"`;
+        document.write(hasil);
+    </script>
+</body>
+</html>
