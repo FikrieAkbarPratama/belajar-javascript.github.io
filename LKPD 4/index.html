@@ -86,13 +86,13 @@
 
       // Soal no3
       let hh = 3;
-      let mm = 45;
-      let ss = 43;
+      let mm = 59;
+      let ss = 59;
       let newSs = ss + 1;
 
       if (newSs > 59) {
         mm = mm + 1
-        ss = 0
+        newSs = 0
 
         if (mm > 59) {
           mm = 0;
@@ -103,8 +103,11 @@
             ss = 0;
           }
         }
+        console.log(`${hh} jam ${mm} menit ${newSs} detik`);
+      } else {
+        console.log(`${hh} jam ${mm} menit ${ss} detik`);
       }
-      console.log(`${hh} jam ${mm} menit ${newSs} detik`);
+    
     </script>
   </body>
 </html>
