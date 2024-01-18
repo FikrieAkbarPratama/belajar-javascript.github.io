@@ -6,31 +6,105 @@
     <title>LKPD 4</title>
   </head>
   <body>
+
     <script>
       // Soal no 1
-      let nama = "Iqpal";
-      let pabp = 70;
-      let mtk = 82;
-      let dpk = 77;
-      let rata2 = (pabp + mtk + dpk) / 3;
+      // let nama = "Iqpal";
+      // let pabp = 70;
+      // let mtk = 82;
+      // let dpk = 77;
+      // let rata2 = (pabp + mtk + dpk) / 3;
 
-      if (rata2 >= 80 && rata2 <= 100) {
-        grade = "A";
-      } else if (rata2 >= 75 && rata2 < 80) {
-        grade = "B";
-      } else if (rata2 >= 65 && rata2 > 75) {
-        grade = "C";
-      } else if (rata2 >= 45 && rata2 > 65) {
-        grade = "D";
-      } else if (rata2 >= 0 && rata2 > 45) {
-        grade = "E";
-      } else {
-        grade = "E";
+      // if (rata2 >= 80 && rata2 <= 100) {
+      //   grade = "A";
+      // } else if (rata2 >= 75 && rata2 < 80) {
+      //   grade = "B";
+      // } else if (rata2 >= 65 && rata2 > 75) {
+      //   grade = "C";
+      // } else if (rata2 >= 45 && rata2 > 65) {
+      //   grade = "D";
+      // } else if (rata2 >= 0 && rata2 > 45) {
+      //   grade = "E";
+      // } else {
+      //   grade = "E";
+      // }
+
+      // let hasil = `${nama} mendapatkan grade "${grade}"`;
+
+      // document.write(hasil);
+
+      // Soal no 2
+
+
+      // let kodePegawai = 11112200708;
+      // let g = Math.floor(kodePegawai / 10000000000);
+      // let dd = Math.floor(kodePegawai % 1000000000 / 10000000);
+      // let mm = Math.floor(kodePegawai / 1000000 % 100);
+      // let yyyy = Math.floor(kodePegawai % 1000000 / 100);
+      // let noUrt = (kodePegawai % 100) 
+
+      // switch (mm) {
+      //   case 1:
+      //     namaBulan = "Januari";
+      //     break;
+      //   case 2:
+      //     namaBulan = "Februari";
+      //     break;
+      //   case 3:
+      //     namaBulan = "Maret";
+      //     break;
+      //   case 4:
+      //     namaBulan = "April";
+      //     break;
+      //   case 5:
+      //     namaBulan = "Mei";
+      //     break;
+      //   case 6:
+      //     namaBulan = "Juni";
+      //     break;
+      //   case 7:
+      //     namaBulan = "Juli";
+      //     break;
+      //   case 8:
+      //     namaBulan = "Agustus";
+      //     break;
+      //   case 9:
+      //     namaBulan = "September";
+      //     break;
+      //   case 10:
+      //     namaBulan = "Oktober";
+      //     break;
+      //   case 11:
+      //     namaBulan = "November";
+      //     break;
+      //   case 12:
+      //     namaBulan = "Desember";
+      //     break;
+      // }
+
+      // document.write(`Kode Pegawai = ${g} <br> ----Tanggal Lahir---- <br> Tanggal = ${dd} <br> Bulan = ${namaBulan} <br> Tahun = ${yyyy} <br> No. Urut = ${noUrt}`);
+
+      // Soal no3
+      let hh = 3;
+      let mm = 45;
+      let ss = 43;
+      let newSs = ss + 1;
+
+      if (newSs > 59) {
+        mm = mm + 1
+        ss = 0
+
+        if (mm > 59) {
+          mm = 0;
+          hh = hh + 1;
+          if (hh > 23) {
+            hh = 0;
+            mm = 0;
+            ss = 0;
+          }
+        }
       }
-
-      let hasil = `${nama} mendapatkan grade ${grade}`;
-
-      document.write(hasil);
+      console.log(`${hh} jam ${mm} menit ${newSs} detik`);
     </script>
   </body>
 </html>
