@@ -1,47 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        
-        // 1. Mencetak bilangan dari 1 sd. 50 
-        // for (let i = 1;i <= 50;i++) {
-        //     console.log(i);
-        // }
+      // 1. Mencetak bilangan dari 1 sd. 50
+      // for (let i = 1;i <= 50;i++) {
+      //     console.log(i);
+      // }
 
-        // 2. Mencetak bilangan ganjil dari 1 sd. 50
-        // for (let i = 1;i <= 50;i++) {
-        //     if (i % 2 == 1){
-        //         console.log(i)
-        //     }
-        // }
+      // 2. Mencetak bilangan ganjil dari 1 sd. 50
+      // for (let i = 1;i <= 50;i++) {
+      //     if (i % 2 == 1){
+      //         console.log(i)
+      //     }
+      // }
 
-        // 3. Mencetak bilangan genap dari 1 sd. 50
-        // for (let i = 1;i <= 50;i++) {
-        //     if (i % 2 == 0){
-        //         console.log(i)
-        //     }
-        // }
+      // 3. Mencetak bilangan genap dari 1 sd. 50
+      // for (let i = 1;i <= 50;i++) {
+      //     if (i % 2 == 0){
+      //         console.log(i)
+      //     }
+      // }
 
-        // 4. Mencetak bilangan genap dan ganjil 1 sd. 50
-        // for (let i = 1;i <= 50;i++) {
-        //     if (i % 2 == 0) {
-        //         console.log(i + " genap")
-        //     } else {
-        //         console.log(i + " ganjil")
-        //     }
-        // }
+      // 4. Mencetak bilangan genap dan ganjil 1 sd. 50
+      // for (let i = 1;i <= 50;i++) {
+      //     if (i % 2 == 0) {
+      //         console.log(i + " genap")
+      //     } else {
+      //         console.log(i + " ganjil")
+      //     }
+      // }
 
-        // 5. Mencetak bilangan terkecil, terbesar, dan rata2
-        // variabel
-        let count = 0;
-        let terkecil;
-        let terbesar;
+      // 5. Mencetak bilangan terkecil, terbesar, dan rata2
+      let count = 1;
+      let total = 0;
+      let max, min;
 
+      while (count <= 20) {
+        let inputNumber = parseFloat(prompt(`Masukkan bilangan ke-${count}:`));
+
+        if (!isNaN(inputNumber)) {
+          total += inputNumber;
+
+          if (count === 1 || inputNumber > max) {
+            max = inputNumber;
+          }
+          if (count === 1 || inputNumber < min) {
+            min = inputNumber;
+          }
+
+          count++;
+        } else {
+          alert("Masukkan angka yang valid!");
+        }
+      }
+
+      let average = total / 20;
+
+      console.log(`Bilangan terbesar: ${max}`);
+      console.log(`Bilangan terkecil: ${min}`);
+      console.log(`Rata-rata: ${average}`);
     </script>
-</body>
+  </body>
 </html>
